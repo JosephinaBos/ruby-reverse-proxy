@@ -50,6 +50,8 @@ group :development do
   gem 'http'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'bootstrap-sass'
+  gem 'simple_form'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

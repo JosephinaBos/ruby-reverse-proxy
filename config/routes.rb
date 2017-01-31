@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :shopping_carts do
+      resources :products
+    end
+  end
+
+resources :products
 
   root to: 'pages#home'
 
