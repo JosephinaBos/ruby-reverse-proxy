@@ -1,10 +1,6 @@
 Rails.application.routes.draw do
-  resources :shopping_carts do
-      resources :products
-    end
-  end
-
-resources :products
+  resources :products, only: [:index, :show]
+  resources :shopping_carts, except: [:index, :create, :update]
 
   root to: 'pages#home'
 
